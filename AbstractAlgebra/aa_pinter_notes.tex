@@ -61,20 +61,20 @@ If group is also commutative we call it \textit{Abelian}. Operation is not neces
 
 \section{Elementary Properties of Groups}
 There is \textbf{exactly one} identity element $e$ and \textbf{exactly one} inverse element $a{-1}$ in every group.
-\begin{theorem}
+\begin{theorem}{}
 If $G$ is a group and $a, b, c \in G$ then
 \begin{itemize}
 \item $ab = ac$ implies $b = c$ and
 \item $ba = ca$ implies $b = c$ 
 \end{itemize}
 \end{theorem}
-\begin{theorem}
+\begin{theorem}{}
 If $G$ is a group and $a, b \in G$ then
 \begin{itemize}
 \item $ab = e$ implies $a = b^{-1}$ and $b = a^{-1}$  
 \end{itemize}
 \end{theorem}
-\begin{theorem}
+\begin{theorem}{}
 If $G$ is a group and $a, b \in G$ then
 \begin{itemize}
 \item $(ab)^{-1} = b^{-1}a^{-1}$ and
@@ -134,4 +134,25 @@ Inverse of any permutation of $A$ is a permutation of $A$, that is $f^{-1} \circ
         \textnormal{The set of all permutations of $A$ with operation $\circ$ of composition is a group - called \textbf{symmetric group} on $A$, denoted $S_A$.}
 \end{definition}
 For any positive integer $n$, symmetric group $S_n$ on the set $\{1, 2, 3, \dots, n\}$ is called the symmetric group on $n$ elements.
+\section{Permutations of a Finite Set}
+\textit{Cycle} $(a_1a_2 \dots a_s)$ is a permutation which shifts first $s$ elements of set ${1,2,\dots ,n}$ cyclically by one while leaving other $n-s$ elements unchanged. Integer s is called \textit{length} of the cycle. The composite of two cycles is called their \textit{product}. If two cycles don't have common elements they are \textit{disjoint} and commutative.
+\begin{theorem}{}
+Every permutation is either the identity, a single cycle or a product of disjoint cycles.
+\end{theorem}
+\textit{Transposition} is a cycle of length 2. Every permutation can be written as the product of transpositions. Dissociation in transpositions is not unique, but final number of product is always either \textit{even} or \textit{odd} for the same permutation.
+\begin{theorem}{}
+Number of transpositions in identity permutation $\varepsilon$ is always even.
+\end{theorem}
+If $\alpha$ is any cycle and $\pi$ any permutation $\pi\alpha\pi^{-1}$ is called a \textit{conjugate} of $\alpha$.
+\section{Isomorphism}
+\begin{definition}{}
+    An \textbf{isomorphism} from group $G1$ to group $G2$ is a bijective function $f: G_1 \to G_2$ with property that for any two elements $a, b \in G_1$
+        \begin{equation}
+                f(ab) = f(a)f(b)
+        \end{equation}
+\end{definition}
+Informally, groups $G1$ and $G2$ are isomorphic if they have same elements with different names.
+\begin{definition}{}
+    \textbf{Cayley's Theorem}: Every group is isomorphic to a group of permutations.
+\end{definition}
 \end{document}
