@@ -155,4 +155,51 @@ Informally, groups $G1$ and $G2$ are isomorphic if they have same elements with 
 \begin{definition}{}
     \textbf{Cayley's Theorem}: Every group is isomorphic to a group of permutations.
 \end{definition}
+Isomorphism is an equivalence relation among groups.
+\section{Order of Group Elements}
+\begin{theorem}{Law of Exponents.}
+    If $G$ is a group and $a \in G$ the following identities hold for all integers $m$ and $n$:
+        \begin{equation*}\tag{i}
+            a^ma^n = a^{m+n}
+        \end{equation*}
+        \begin{equation*}\tag{ii}
+            (a^m)^n = a^{mn}
+        \end{equation*}
+        \begin{equation*}\tag{iii}
+            a^{-n} = (a^{-1})^n = (a^n)^{-1}
+        \end{equation*}
+\end{theorem}
+\begin{theorem}{Division Algorithm.}
+        If $m$ and $n$ are integers and $n$ is positive, there exists unique integers $q$ (\textit{quotient}) and $r$ (\textit{remainder}) such that 
+    \begin{equation*}
+            m = nq + r \text{ and } 0 \leq r < n
+    \end{equation*}
+\end{theorem}
+If there exists a nonzero integer $m$ such that $a^m=e$ then the \textbf{order} of the element $a$ is defined to be the \textbf{least positive} integer $n$ such that $a^n=e$. If such $m$ does not exist, $a$ has order infinity.
+\begin{theorem}{}
+        If the order of $a$ is $n$ there are exactly $n$ different powers of $a$.
+\end{theorem}
+\begin{theorem}{}
+        If the order of $a$ is infinte all powers of $a$ are different.
+\end{theorem}
+\section{Cyclic Groups}
+\begin{theorem}{Isomorphism of Cyclic Groups}
+\begin{itemize}
+        \item For every positive integer $n$, every cyclic group of order $n$ is ismorphic to $\mathbb{Z}_n$. Any two cyclic groups of order $n$ are isomporhic to each other. 
+       \item Every cyclic group of order infinity is isomporhic to $\mathbb{Z}$
+\end{itemize} 
+\end{theorem}
+\begin{theorem}{}
+        Every subgroup of a cyclic group is cyclic.
+\end{theorem}
+\section{Partitions and Equivalence Relations}
+Partition of a set $A$ is a familiy $\{ A_i : i \in I \}$ of nonempty subsets of A which are mutually disjoint and whose union is all of $A$. If any two subsets $A_i$ and $A_j$ have a common element $x$ then $A_i = A_j$. Every element of $A$ lies in one of the subsets.
+\\
+\textit{A relation} on a set $A$ is a statement which is either true or false for each ordered pair $(x, y)$ of elements of $A$.
+Equivalence relation on a set $A$ is a relation $\sim$ which is 
+\begin{itemize}
+    \item \textit{Reflexive} $x \sim x$ , $\forall x \in A$
+    \item \textit{Symmetric} if $x \sim y$ , then $y \sim x$
+    \item \textit{Transitive} if $x \sim y$ and $y \sim z$, then $x \sim z$
+\end{itemize}
 \end{document}
