@@ -14,6 +14,8 @@
 \newtheorem{axiom}{G}[]
 \theoremstyle{theorem}
 \newtheorem{theorem}{Theorem}[section]
+\theoremstyle{lemma}
+\newtheorem{lemma}{Lemma}[section]
 \begin{document}
 \maketitle
 
@@ -202,4 +204,63 @@ Equivalence relation on a set $A$ is a relation $\sim$ which is
     \item \textit{Symmetric} if $x \sim y$ , then $y \sim x$
     \item \textit{Transitive} if $x \sim y$ and $y \sim z$, then $x \sim z$
 \end{itemize}
+The set of all elements equivalent to $x$ is \textit{equivalence class} of $x$
+\begin{equation*}
+        [x] = \{y \in A : y \sim x\}
+\end{equation*}
+\begin{lemma}{}
+        If $x \sim y$ then $[x] = [y]$
+\end{lemma}
+\begin{theorem}
+        If $\sim$ is an equivalence relation on $A$ the family of all the equivalence classes is a partition of $A$.
+\end{theorem}
+\section{Counting Cosets}
+If $H$ is a subgroup of $G$, for any element $a$ in $G$ the symbol $aH$ denotes the set of all products $ah, \forall h \in H$ where $a$ is fixed. This is a \textbf{left coset} of $H$ in $G$. Similarly $Ha$ is \textbf{right coset} of $H$ in $G$.
+\begin{theorem}{}
+    The family of all cosets $Ha$ as $a$ ranges over $G$ is a partition of $G$.
+\end{theorem}
+For $H$ subgroup of $G$, all the cosets of $H$ have the same number of elements.
+\begin{theorem}{}
+    If $Ha$ is any coset of $H$ there is a one-to-one correspondence from $H$ to $Ha$.
+\end{theorem}
+\begin{theorem}{Lagrange's theorem}
+        Let $H$ be any subgroup of a finite group $G$. The order of $G$ is a multiple of order of $H$.
+\end{theorem}
+\begin{theorem}{}
+    If $G$ is a group with a prime number $p$ of elements, then $G$ is a cyclic group. Any element $a \neq e$ in $G$ is a generator of $G$.
+\end{theorem}
+\begin{theorem}{}
+        The order of any element of a finite group divides the order of group.
+\end{theorem}
+If $G$ is a finite group and $p$ is a prime divisor of $|G|$ then $G$ has an element of order $p$.
+\section{Homomorphisms}
+If $G$ and $H$ are groups, a textbf{homomorphism} from $G$ to $H$ is a function $f: G \to H$ such that for any two elements $a,b \in G$ 
+\begin{equation*}
+    f(ab) = f(a)f(b)
+\end{equation*}
+\begin{theorem}{}
+        Let $G, H$ be groups and $f: G \to H$ a homomorphism. Then
+        \begin{itemize}
+            \item $f(e) = e$ and
+            \item $f(a^{-1}) = [f(a)]^{-1}$ for every element $a \in G$
+        \end{itemize}
+\end{theorem}
+If $a$ is an element of group $G$, a \textit{conjugate of} $a$ is any element of the form $xax^{-1}, x \in G$.
+\begin{definition}{}
+$H$ is called normal subgroup of $G$ if it is closed with respect to conjugates if
+        \begin{equation*}
+                \text{for any } a \in H \text{ and } x \in G xax^{-1} \in H
+        \end{equation*}
+\end{definition}
+\begin{definition}{}
+        The \textbf{kernel} of $f: G \to H$ is the set $K$ of all the elements of $G$ which are carried by $f$ onto the neutral element of $H$.
+\end{definition}
+\begin{theorem}{}
+        Let $f: G \to H$ be a homomorphism. 
+        \begin{itemize}
+            \item The kernel of $f$ is a normal subgroup of $G$ and
+            \item The range of $f$ is a subgroup of $H$
+        \end{itemize}
+\end{theorem}
+\section{Quotient Groups}
 \end{document}
