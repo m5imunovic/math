@@ -285,4 +285,49 @@ Coset multiplication: the coset of $a$ multiplied by the coset of $b$ is defined
             Ha = H \iff a \in H
         \end{equation*}
 \end{theorem}
+\section{The Fundamental Homomorphism Theorem}
+\begin{theorem}{}
+    Let $f: G \to H$ be a homomorphism with kernel K. Then $f(a) = f(b)$ iff $Ka = Kb$.
+\end{theorem}
+\begin{theorem}{}
+        Let $f: G \to H$ be a homomorphism of $G$ \textbf{onto} $H$. If $K$ is kernel of $f$, then
+        $H \cong G/K$
+\end{theorem}
+\section{Rings: Definitions and Elementary Properties}
+\begin{definition}{}
+    Ring is a set $A$ with operations called addition and multiplication which satisfy the following axioms:
+        \begin{enumerate}
+            \item $A$ with addition alone is an abelian group.
+            \item Multiplication is associative
+            \item Multiplication is distributive over addition
+        \end{enumerate}
+\end{definition}
+\begin{theorem}{}
+    Let $a$ and $b$ be any elements of a ring $A$.
+        \renewcommand{\labelenumiii}{\theenumi}
+        \begin{enumerate}
+            \item $a0 = 0$ and $0a = 0$
+            \item a(-b) = -(ab) and (-a)b = -(ab)
+            \item (-a)(-b) = ab
+        \end{enumerate}
+\end{theorem}
+\begin{itemize}
+    \item \textit{Commutative} ring has commutative multiplication too.
+    \item \textit{Ring with unity} has neutral element for multipilcation.
+    \item \textit{Field} is a commutative ring with unity in which every nonzero element is invertible.
+\end{itemize}
+\begin{definition}{}
+        In any ring, a nonzero element $a$ is called a \textbf{divisor of zero} if there is a nonzero element $b$ in the ring such that the product $ab$ or $ba$ is equal to \textit{zero}. If the product of two elements in the ring is equal zeor at least one of the factors is zero (ring doesn't divisors of zero).
+\end{definition}
+\begin{definition}{}
+    A ring is said to have the \textbf{cancelation property} if
+        \begin{equation*}
+            ab = bc \text{ or } ba = ca \text{ implies } b = c
+        \end{equation*}
+    for any elements $a, b, c$ in the ring if $a \neq 0$.
+\end{definition}
+\begin{theorem}{}
+    A ring has cancelation property \textit{iff} it has no divisors of zero.
+\end{theorem}
+\section{Ideals and Homomorphisms}
 \end{document}
