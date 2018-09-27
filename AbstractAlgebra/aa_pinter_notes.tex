@@ -373,7 +373,41 @@ The kernel of $f$ is an ideal of $A$.
         \begin{equation*}
             A/J = \{J+a, J+b, J+c, ...\}
         \end{equation*}
-    with coset addition and multiplication is a ring
+        with coset addition and multiplication is a ring. It is called \textit{quotient} ring.
 \end{theorem}
+\begin{theorem}{}
+    $A/J$ is a homomorphic image of $A$.
+\end{theorem}
+\begin{theorem}{}
+        Let $f: A \to B$ be a homomorphism from a ring $A$ \textbf{onto} a ring $B$ and let $K$ be the kernel of $f$. Then $B \cong A/K$.
+\end{theorem}
+\section{Integral Domains}
+Integral domain is a commutative ring with unity having the cancelation property.
 
+\begin{equation}
+        \text{if } a \neq 0 \text{ and } ab = ac \text{ then } b = c
+\end{equation}
+\begin{equation}
+        \text{if } ab = 0 \text{ then } a = 0 \text{ or } b = 0
+\end{equation}
+If $A$ is the ring with unity, the \textbf{characteristic of $A$} is the least positive integer $n$ such that
+\begin{equation*}
+\underbrace{1 + 1 + \cdots + 1 = 0}_\text{n times}
+\end{equation*}
+This is \textit{additive order} of $a \in A$
+\begin{theorem}{}
+    All the nonzero elements in an integral domain have the same additive order.
+\end{theorem}
+\begin{theorem}{}
+    In an integral domain with nonzero characteristic, the characteristic is a prime number.
+\end{theorem}
+\begin{theorem}{}
+    In any integral domain of characteristic \textbf{p}
+        \begin{equation*}
+                (a+b)^p = a^p + b^p \;\; \forall a,b
+        \end{equation*}
+\end{theorem}
+\begin{theorem}{}
+    Every finite integral domain is a field
+\end{theorem}
 \end{document}
